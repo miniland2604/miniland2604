@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void hello(string n="You")
+{
+    cout <<"Hello "<< n << endl;
+    cout <<"this is your first Visual C++ programm \n Congratulations! ... " << endl;
+}
+
+int main()
+{
+   string name;
+   cout << "Gib deinen Namen an:";
+   cin >>name;
+   
+   if (name.empty()) hello();
+   else hello(name);
+}
+
